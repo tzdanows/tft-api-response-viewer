@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TFT API Test Suite">
+    <test name="API Tests">
+        <classes>
+            <class name="com.example.tft.tests.TFTMatchTests"/>
+        </classes>
+    </test>
+</suite>
