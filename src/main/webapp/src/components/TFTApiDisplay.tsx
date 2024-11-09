@@ -71,13 +71,12 @@ const TFTApiDisplay: React.FC = () => {
           console.error('Error fetching match data:', error);
         }
       };
+      
       fetchMatchData();
     }, []);
   
     if (!matchData) return <div className="text-gray-200">Loading...</div>;
-  
-    // ... (keep all your existing helper functions)
-  
+    
     const SectionHeader: React.FC<{ title: string; section: string }> = ({ title, section }) => (
       <div className="flex items-center justify-between cursor-pointer" onClick={() => toggleSection(section)}>
         <h3 className="text-lg font-semibold text-gray-200">{title}</h3>
@@ -146,7 +145,7 @@ const TFTApiDisplay: React.FC = () => {
           </CardContent>
         </Card>
   
-        {/* Participants Section */}
+        {/* Player Section */}
         <Card className="bg-gray-800 border-gray-700">
           <CardHeader>
             <CardTitle className="text-gray-100">Player Details</CardTitle>
@@ -167,7 +166,7 @@ const TFTApiDisplay: React.FC = () => {
                   </div>
                 </div>
   
-                {/* Basic Info */}
+                {/* Player Specific Details */}
                 <div className="grid grid-cols-2 gap-4 mb-4">
                   <DataItem label="Gold Left" value={participant.gold_left} />
                   <DataItem label="Last Round" value={participant.last_round} />

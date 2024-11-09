@@ -14,6 +14,7 @@ public class TFTApiClient {
         RestAssured.baseURI = baseUrl;
     }
 
+    // map response details to models (TODO: additional functionality)
     public TFTMatch getMatch(String matchId, String region) {
         Response response = RestAssured.given()
                 .header("X-Riot-Token", apiKey)
