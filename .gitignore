@@ -39,3 +39,7 @@ build/
 
 ### etc ###
 .env
+
+node_modules
+dist
+*.local
