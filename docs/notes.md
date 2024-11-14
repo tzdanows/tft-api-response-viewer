@@ -12,11 +12,19 @@ run the App.java file
 npm run dev
 ```
 
+# future consideration / implementations
 
+for ease of use, I've made this application to display match details from a given matchID which can be pulled by your riotID(multiple matches) or a matchID
 
+you can grab a matchid from the url of your profile on [tactics.tools](https://tactics.tools/player/na/)
 
+```
+# real example
+https://tactics.tools/player/na/PLAYER/PRIM3/NA1_5107918675
 
-# future consideration
+# example with descriptions
+https://tactics.tools/player/na/{username}/{usertag}/{matchID_copy_this}
+```
 
 ## Docker setup (TODO)
 
