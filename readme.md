@@ -14,7 +14,7 @@ https://tactics.tools/player/na/{username}/{usertag}/{matchID_copy_this}
 
 NOTE: the current implementation uses a hardcoded api output from 2024 since [Riot developers plan to limit vital api aspects for Set 13](https://x.com/Mortdog/status/1856785428852216007)
 
-![alt text](current_app.png)
+![alt text](docs/current_app.png)
 
 ### current technical considerations
 - Java/Spring Boot/Maven
