@@ -65,10 +65,11 @@ const TFTApiDisplay: React.FC = () => {
     useEffect(() => {
       const fetchMatchData = async () => {
         try {
-          const response = await axios.get<TFTMatch>('/api/matches/NA1_4911969563');
+          const response = await axios.get('/api/matches/NA1_4911969563');
+          console.log('Response:', response.data);
           setMatchData(response.data);
         } catch (error) {
-          console.error('Error fetching match data:', error);
+          console.error('Error:', error);
         }
       };
       
