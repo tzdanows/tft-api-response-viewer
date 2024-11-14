@@ -1,14 +1,22 @@
 # to run the application
 ```bash
-# backend(port:8088)
+# backend(port:8088) in terminal @ ~/d/b/tft-api-example
 mvn clean install
 mvn spring-boot:run
 # OR
 java -jar target/tft-api-wrapper-1.0-SNAPSHOT.jar
+# OR 
+run the App.java file
 
-# frontend(port:5173) in another terminal
+# frontend(port:5173) in another terminal @ ~/d/b/tft-api-example/s/m/webapp
 npm run dev
 ```
+
+
+
+
+
+# future consideration
 
 ## Docker setup (TODO)
 
