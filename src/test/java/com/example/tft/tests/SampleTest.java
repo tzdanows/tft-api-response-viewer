@@ -4,7 +4,9 @@ import io.github.cdimascio.dotenv.Dotenv;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.DisplayName;
 
+@DisplayName("Sample Environment Tests")
 public class SampleTest {
 
     private String apiKey;
@@ -26,11 +28,13 @@ public class SampleTest {
     }
 
     @Test
+    @DisplayName("Should verify test environment is working")
     public void testEnvironmentSetup() {
         assertTrue(true, "Basic test to verify TestNG is running");
     }
 
     @Test
+    @DisplayName("Should verify API key is properly configured")
     public void testApiKeyAvailable() {
         assertNotNull(apiKey, "API key should be available");
         assertTrue(apiKey.startsWith("RGAPI-"), "API key should start with RGAPI-");
