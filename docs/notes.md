@@ -10,6 +10,10 @@ run the App.java file
 
 # frontend(port:5173) in another terminal @ ~/d/b/tft-api-example/s/m/webapp
 npm run dev
+
+# Testing
+
+mvn clean test
 ```
 
 # future consideration / implementations

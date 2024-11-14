@@ -14,25 +14,25 @@ public class TFTApiClient {
         RestAssured.baseURI = baseUrl;
     }
 
-    // map response details to models (TODO: additional functionality)
     public TFTMatch getMatch(String matchId, String region) {
         Response response = RestAssured.given()
-                .header("X-Riot-Token", apiKey)
                 .when()
-                .get("/tft/match/v1/matches/{matchId}", matchId);
+                .get("/matches/{matchId}", matchId);
 
         response.then().statusCode(200);
         return response.as(TFTMatch.class);
     }
+}
 
-    public String[] getMatchesByPuuid(String puuid, String region, int count) {
+/*
+
+    public TFTMatch getMatch(String matchId, String region) {
         Response response = RestAssured.given()
-                .header("X-Riot-Token", apiKey)
-                .queryParam("count", count)
                 .when()
-                .get("/tft/match/v1/matches/by-puuid/{puuid}/ids", puuid);
+                .get("/matches/{matchId}", matchId);
 
         response.then().statusCode(200);
-        return response.as(String[].class);
+        return response.as(TFTMatch.class);
     }
 }
+*/

@@ -1,16 +1,15 @@
 package com.example.tft.tests;
 
 import io.github.cdimascio.dotenv.Dotenv;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-import static org.testng.Assert.assertNotNull;
-import static org.testng.Assert.assertTrue;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class SampleTest {
 
     private String apiKey;
 
-    @BeforeClass(alwaysRun = true)
+    @BeforeEach
     public void setup() {
         // Load from .env file
         Dotenv dotenv = Dotenv.configure()
