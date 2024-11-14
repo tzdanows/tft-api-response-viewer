@@ -9,9 +9,8 @@ NOTE: the current implementation uses a hardcoded api output from 2024 since [Ri
 ### current technical considerations
 - Java/Spring Boot/Maven
 - React/Typescript/Vite/Tailwind/Shadcn
-- REST assured/Lombok
 - no database currently needed (processing one match at a time)
-- API integration testing (TODO)
+- JUnit/Rest Assured
 - Riot API
 
 ### intent
